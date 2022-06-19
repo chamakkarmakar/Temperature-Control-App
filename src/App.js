@@ -17,7 +17,7 @@ function App() {
           <div>
             <div className='degree'
               style={temp > 15 ?
-                { backgroundColor: "red" } : 
+                { backgroundColor: "red", color: "white" } : 
               {backgroundColor : "skyblue"}}
             >
               <h2>{ temp}ºC </h2>
