@@ -3,6 +3,12 @@ import './App.css';
 
 function App() {
   const [temp, setTemp] = useState(0);
+  const handleIncrement = () => {
+    setTemp(temp + 1);
+  }
+  const handleDecrement = () => {
+    setTemp(temp - 1);
+  }
   return (
     <div className="App">
       <div className="container">
@@ -13,8 +19,8 @@ function App() {
               <h2>{ temp} </h2>
             </div>
             <div className='btn'>
-              <button className='increment'>+</button>
-              <button className='decrement'>-</button>
+            <button onClick={()=>handleIncrement()}>+</button>
+              <button onClick={()=>handleDecrement()}>-</button>
             </div>
           </div>
         </div>
