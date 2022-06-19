@@ -24,13 +24,12 @@
   color: white;
 }
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 30%;
+  margin: 10% auto;
+
 }
 
 .tem {
-  width: 30%;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -40,6 +39,7 @@
   width: 100px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  transition: 0.9s ease-in-out;
 }
 .btn {
   width: 50%;
@@ -49,8 +49,13 @@
  align-items: center;
 }
 button {
+  background-color: bisque;
  padding: 15px 25px;
  font-size: 25px;
+ cursor: pointer;
+}
+button:hover {
+  background-color: beige;
 }
 
 .App-link {

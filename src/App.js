@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [temp, setTemp] = useState(0);
+  const [temp, setTemp] = useState(10);
   const handleIncrement = () => {
     setTemp(temp + 1);
   }
@@ -15,8 +15,12 @@ function App() {
       <div className="tem">
           <h2>Temparature Control App</h2>
           <div>
-            <div className='degree'>
-              <h2>{ temp} </h2>
+            <div className='degree'
+              style={temp > 15 ?
+                { backgroundColor: "red" } : 
+              {backgroundColor : "skyblue"}}
+            >
+              <h2>{ temp}ºC </h2>
             </div>
             <div className='btn'>
             <button onClick={()=>handleIncrement()}>+</button>
