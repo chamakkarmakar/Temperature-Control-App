@@ -23,6 +23,35 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tem {
+  width: 30%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.degree {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 100px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.btn {
+  width: 50%;
+  margin: 50px auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+button {
+ padding: 15px 25px;
+ font-size: 25px;
+}
 
 .App-link {
   color: #61dafb;
